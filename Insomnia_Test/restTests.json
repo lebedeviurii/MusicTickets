@@ -1,0 +1,269 @@
+{
+    "_type":"export",
+    "__export_format":4,
+    "__export_date":"2023-01-08T20:09:14.137Z",
+    "__export_source":"insomnia.desktop.app:v2022.7.0",
+    "resources":[
+       {
+          "_id":"req_2e0143325f384933bde547a58e12eea4",
+          "parentId":"wrk_3eae275a302547cdb6a6e6133993d3dc",
+          "modified":1673208062186,
+          "created":1673207746452,
+          "url":"http://localhost:8080/Music_Tickets/rest/tickets/51",
+          "name":"Buyed \"id = 51\" ticket",
+          "description":"",
+          "method":"GET",
+          "body":{
+             
+          },
+          "parameters":[
+             
+          ],
+          "headers":[
+             
+          ],
+          "authentication":{
+             
+          },
+          "metaSortKey":-1673207746452,
+          "isPrivate":false,
+          "settingStoreCookies":true,
+          "settingSendCookies":true,
+          "settingDisableRenderRequestBody":false,
+          "settingEncodeUrl":true,
+          "settingRebuildPath":true,
+          "settingFollowRedirects":"global",
+          "_type":"request"
+       },
+       {
+          "_id":"wrk_3eae275a302547cdb6a6e6133993d3dc",
+          "parentId":null,
+          "modified":1669025470282,
+          "created":1669025470282,
+          "name":"New Document",
+          "description":"",
+          "scope":"design",
+          "_type":"workspace"
+       },
+       {
+          "_id":"req_66f6fdd0c5b346f98e4f925b74e1afd9",
+          "parentId":"wrk_3eae275a302547cdb6a6e6133993d3dc",
+          "modified":1673207036609,
+          "created":1673206748061,
+          "url":"http://localhost:8080/Music_Tickets/rest/events/update-2",
+          "name":"New Request",
+          "description":"",
+          "method":"PUT",
+          "body":{
+             "mimeType":"application/json",
+             "text":"\t{\n\t\t\"id\": 2,\n\t\t\"startDate\": \"2022-11-11T01:00:00\",\n\t\t\"endDate\": \"2023-01-08T01:00:00\",\n\t\t\"place\": \"Prague\",\n\t\t\"name\": \"NEW Event\",\n\t\t\"activeForSelling\": true,\n\t\t\"sellingStartDate\": \"2022-11-06T01:00:00\",\n\t\t\"posts\": [],\n\t\t\"band\": [\t\n\t\t\t{\n\t\t\t\t\"id\": 101,\n\t\t\t\t\"name\": \"Ramstein\",\n\t\t\t\t\"genre\": \"Dance-Metal\",\n\t\t\t\t\"info\": \"German rock band\"\n\t\t\t}\n\t\t]\n\t}"
+          },
+          "parameters":[
+             
+          ],
+          "headers":[
+             {
+                "name":"Content-Type",
+                "value":"application/json"
+             }
+          ],
+          "authentication":{
+             
+          },
+          "metaSortKey":-1673206748061,
+          "isPrivate":false,
+          "settingStoreCookies":true,
+          "settingSendCookies":true,
+          "settingDisableRenderRequestBody":false,
+          "settingEncodeUrl":true,
+          "settingRebuildPath":true,
+          "settingFollowRedirects":"global",
+          "_type":"request"
+       },
+       {
+          "_id":"req_19c0624d6a874f7baadb8aa02d8c9063",
+          "parentId":"wrk_3eae275a302547cdb6a6e6133993d3dc",
+          "modified":1673206263134,
+          "created":1673206240265,
+          "url":"http://localhost:8080/Music_Tickets/rest/tickets",
+          "name":"Tickets",
+          "description":"",
+          "method":"GET",
+          "body":{
+             
+          },
+          "parameters":[
+             
+          ],
+          "headers":[
+             
+          ],
+          "authentication":{
+             
+          },
+          "metaSortKey":-1673206240265,
+          "isPrivate":false,
+          "settingStoreCookies":true,
+          "settingSendCookies":true,
+          "settingDisableRenderRequestBody":false,
+          "settingEncodeUrl":true,
+          "settingRebuildPath":true,
+          "settingFollowRedirects":"global",
+          "_type":"request"
+       },
+       {
+          "_id":"req_c3139e854d1540c1b11a99eddccaf3ea",
+          "parentId":"wrk_3eae275a302547cdb6a6e6133993d3dc",
+          "modified":1673206991746,
+          "created":1673204537637,
+          "url":"http://localhost:8080/Music_Tickets/rest/events",
+          "name":"Events",
+          "description":"",
+          "method":"GET",
+          "body":{
+             "mimeType":"application/json",
+             "text":""
+          },
+          "parameters":[
+             
+          ],
+          "headers":[
+             {
+                "name":"Content-Type",
+                "value":"application/json"
+             }
+          ],
+          "authentication":{
+             
+          },
+          "metaSortKey":-1673204537637,
+          "isPrivate":false,
+          "settingStoreCookies":true,
+          "settingSendCookies":true,
+          "settingDisableRenderRequestBody":false,
+          "settingEncodeUrl":true,
+          "settingRebuildPath":true,
+          "settingFollowRedirects":"global",
+          "_type":"request"
+       },
+       {
+          "_id":"req_fe62e67b276a49ebb380c01753015bcb",
+          "parentId":"wrk_3eae275a302547cdb6a6e6133993d3dc",
+          "modified":1673208057162,
+          "created":1669025470314,
+          "url":"http://localhost:8080/Music_Tickets/rest/tickets/buy-51",
+          "name":"Buy \"id = 51\" ticket",
+          "description":"",
+          "method":"PUT",
+          "body":{
+             "mimeType":"application/json",
+             "text":"{\n\t\"userId\" : 2\n}"
+          },
+          "parameters":[
+             
+          ],
+          "headers":[
+             {
+                "name":"Content-Type",
+                "value":"application/json"
+             }
+          ],
+          "authentication":{
+             
+          },
+          "metaSortKey":-1669025470314,
+          "isPrivate":false,
+          "settingStoreCookies":true,
+          "settingSendCookies":true,
+          "settingDisableRenderRequestBody":false,
+          "settingEncodeUrl":true,
+          "settingRebuildPath":true,
+          "settingFollowRedirects":"global",
+          "_type":"request"
+       },
+       {
+          "_id":"env_bb3a1cae836c9cfdb39777985c6e7a2d5c8dc780",
+          "parentId":"wrk_3eae275a302547cdb6a6e6133993d3dc",
+          "modified":1669025470304,
+          "created":1669025470304,
+          "name":"Base Environment",
+          "data":{
+             
+          },
+          "dataPropertyOrder":null,
+          "color":null,
+          "isPrivate":false,
+          "metaSortKey":1669025470305,
+          "_type":"environment"
+       },
+       {
+          "_id":"jar_bb3a1cae836c9cfdb39777985c6e7a2d5c8dc780",
+          "parentId":"wrk_3eae275a302547cdb6a6e6133993d3dc",
+          "modified":1669025470308,
+          "created":1669025470308,
+          "name":"Default Jar",
+          "cookies":[
+             
+          ],
+          "_type":"cookie_jar"
+       },
+       {
+          "_id":"spc_68b78472901b4526869f0bbb41b51ead",
+          "parentId":"wrk_3eae275a302547cdb6a6e6133993d3dc",
+          "modified":1673208230374,
+          "created":1669025470298,
+          "fileName":"MusicTickets",
+          "contents":"",
+          "contentType":"yaml",
+          "_type":"api_spec"
+       },
+       {
+          "_id":"uts_53c8a48c1afa4d31940f6e629f171013",
+          "parentId":"wrk_3eae275a302547cdb6a6e6133993d3dc",
+          "modified":1673199575355,
+          "created":1673199575355,
+          "name":"MusicTicket Suite",
+          "_type":"unit_test_suite"
+       },
+       {
+          "_id":"ut_10b1c4fe95f54bda98aa8abbbc8c8e40",
+          "parentId":"uts_53c8a48c1afa4d31940f6e629f171013",
+          "modified":1673207924057,
+          "created":1673201687316,
+          "requestId":"req_c3139e854d1540c1b11a99eddccaf3ea",
+          "name":"Have ID Property",
+          "code":"const response = await insomnia.send();\nconst body = JSON.parse(response.data);\nconst item = body[0];\n\nexpect(body).to.be.an('array');\nexpect(item).to.be.an('object');\nexpect(item).to.have.property('id');",
+          "_type":"unit_test"
+       },
+       {
+          "_id":"ut_f93973504f0b41abad1260301e5b44f1",
+          "parentId":"uts_53c8a48c1afa4d31940f6e629f171013",
+          "modified":1673208138073,
+          "created":1673207684406,
+          "requestId":"req_2e0143325f384933bde547a58e12eea4",
+          "name":"Have a User Property",
+          "code":"const response = await insomnia.send();\nconst body = JSON.parse(response.data);\n\nexpect(body).to.be.an('object');\nexpect(body).to.have.property('user');",
+          "_type":"unit_test"
+       },
+       {
+          "_id":"ut_9e140b7c932546269db633578a19fdd3",
+          "parentId":"uts_53c8a48c1afa4d31940f6e629f171013",
+          "modified":1673207955331,
+          "created":1673207939480,
+          "requestId":"req_fe62e67b276a49ebb380c01753015bcb",
+          "name":"Returns 200",
+          "code":"const response1 = await insomnia.send();\nexpect(response1.status).to.equal(200);",
+          "_type":"unit_test"
+       },
+       {
+          "_id":"ut_eac0c5965f9b4552bb986ad0c03f6c8f",
+          "parentId":"uts_53c8a48c1afa4d31940f6e629f171013",
+          "modified":1673208124576,
+          "created":1673208105201,
+          "requestId":"req_19c0624d6a874f7baadb8aa02d8c9063",
+          "name":"Have Event Property",
+          "code":"const response = await insomnia.send();\nconst body = JSON.parse(response.data);\nconst item = body[0];\n\nexpect(body).to.be.an('array');\nexpect(item).to.be.an('object');\nexpect(item).to.have.property('event');",
+          "_type":"unit_test"
+       }
+    ]
+ }
